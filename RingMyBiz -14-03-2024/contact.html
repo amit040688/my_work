@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="main.css" />
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+/>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+/>
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+<title>RingMyBiz</title>
+</head>
+
+<body style="background: #f9fafc">
+<div class="header div-2" id="home">
+    <div class="container div-3">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-9 col-sm-6 mb-2 align-items-center">
+        <a href="index.html" class="header_logo"
+            ><img
+            loading="lazy"
+            src="images/new_logo.gif"
+            class="img align-sm-c"
+        /></a>
+        </div>
+        <div class="col-12 col-md-3 col-sm-6">
+        <div class="div-4">
+            <a href="business_detail.html" class="add_your_business div-5"
+            >Add your business | +</a
+            >
+            <a href="login.html" class="header_login">
+            <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/37d83731e8c5aa886eacd6d830445fed9416207716327f40e680a485a1773382?"
+                class="img-2"
+            />
+            <div class="div-3">Login</div>
+            </a>
+            <a href="#" class="user_login_icon">
+            <img src="Images/snr.png" alt="" />
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<aside class="aside_main_wrap">
+    <div class="account">
+    <div class="account_heading">
+        <div class="side_menu_close"><i class="fa-solid fa-xmark"></i></div>
+
+        <a class="profile_name">
+        <div class="user_profile_name">
+            <div class="user_name">Profile name</div>
+            <div class="user_details">Click to view profile</div>
+        </div>
+        <div class="user_profile_img">
+            <div class="userimage">
+            <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="account_content">
+        <div class="account_catebox">
+        <ul class="account_catelist">
+            <li role="button" class="account_cateitem">
+            <a class="account_cateanchor">
+                <div class="account_icon">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-favorites.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text font15">Favorites</div>
+            </a>
+            </li>
+            <li
+            tabindex="0"
+            aria-label="Saved"
+            role="button"
+            class="account_cateitem"
+            >
+            <a class="account_cateanchor">
+                <div class="account_icon">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-saved.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">Saved</div>
+            </a>
+            </li>
+            <li class="account_cateitem">
+            <a class="">
+                <div class="">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-interests.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">Interests</div>
+            </a>
+            </li>
+            <li class="account_cateitem">
+            <a class="">
+                <div class="">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-editprofile.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">Edit Profile</div>
+            </a>
+            </li>
+            <li class="account_cateitem">
+            <a class="account_cateanchor">
+                <div class="">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-my-transaction.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">My Transaction</div>
+            </a>
+            </li>
+            <li
+            tabindex="0"
+            aria-label="Change language"
+            role="button"
+            class="account_cateitem"
+            >
+            <a class="account_cateanchor">
+                <div class="">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/language_sidebar_icon.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="side_select_language">
+                <div class="account_text">Change language</div>
+                <div class="sidebarbox">
+                    <div class="sidebox">
+                    <div class=" ">English</div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <ul class="sidelang_dropdown dn">
+                    <li class="">हिंदी</li>
+                    <li class="">मराठी</li>
+                    <li class="">বেঙ্গলি</li>
+                    <li class="">ગુજરાતી</li>
+                    <li class="">ಕನ್ನಡ</li>
+                    <li class="">தமிழ்</li>
+                    </ul>
+                </div>
+                </div>
+            </a>
+            </li>
+        </ul>
+        </div>
+        <div class="account_catebox">
+        <ul class="account_catelist">
+            <li
+            tabindex="0"
+            aria-label="Notifications"
+            role="button"
+            class="account_cateitem"
+            >
+            <a class="account_cateanchor">
+                <div class="account_icon">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/notify_icon.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">Notifications</div>
+            </a>
+            </li>
+            <li class="account_cateitem">
+            <a href="#" class="">
+                <div class="">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-custom-service.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">Customer Service</div>
+            </a>
+            </li>
+        </ul>
+        </div>
+        <div class="account_catebox">
+        <ul class="account_catelist">
+            <li class="account_cateitem">
+            <a href="#" class="jsx-314be73d0280ef0d account_cateanchor">
+                <div class="">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-investor-relations.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">Investor Relations</div>
+            </a>
+            </li>
+        </ul>
+        </div>
+        <div class="account_catebox">
+        <ul class="account_catelist">
+            <li class="account_cateitem">
+            <a href="#" class="jsx-314be73d0280ef0d account_cateanchor">
+                <div class="account_icon">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-policy.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">Policy</div>
+            </a>
+            </li>
+            <li class="account_cateitem">
+            <a class="account_cateanchor">
+                <div class="account_icon">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-feedback.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">Feedback</div>
+            </a>
+            </li>
+            <li class="account_cateitem">
+            <a class="account_cateanchor">
+                <div class="account_icon">
+                <img
+                    src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-logout.svg"
+                    alt=""
+                    class="jsx-314be73d0280ef0d account_image"
+                />
+                </div>
+                <div class="account_text">Logout</div>
+            </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </div>
+</aside>
+<div class="top_search">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 m-auto">
+        <div class="search_wrapper my-5">
+            <div class="searchBar">
+            <input
+                id="searchQueryInput"
+                type="text"
+                name="searchQueryInput"
+                placeholder="Search for anything"
+                value=""
+            />
+            <button
+                id="searchQuerySubmit"
+                type="submit"
+                name="searchQuerySubmit"
+            >
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                <path
+                    fill="#666666"
+                    d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+                />
+                </svg>
+            </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+    </div>
+</section> 
+
+
+<div class="page-info">
+    <div class="container">
+    <div class="inner-container">
+    <ul class="bread-crumb">
+    <ol>
+    <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" href="index.html">
+    <span property="name">Home</span></a>
+    <meta property="position" content="1">
+    </li>
+    <li property="itemListElement" typeof"ListItem">
+    <a property="item" href="contact.html">
+    <span property="name">Contact Us</span></a>
+    <meta property="position" content="2">
+    </li>
+    
+    
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+<section class="contact-section">
+    <div class="container">
+    <div class="row clearfix align-items-center mb-5 mt-5">
+        <!--Contact Form Column-->
+        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
+        <div class="contact-form-column">
+            <div class="inner-column">
+            <h2>LEAVE YOUR Message and We will get back to you shortly</h2>
+
+            <!--Contact Form-->
+            <div class="contact-form">
+                <form
+                method="post"
+                id="frmContact1"
+                action=""
+                >
+                <div class="row clearfix">
+                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <input
+                        type="text"
+                        name="name"
+                        value=""
+                        placeholder="Name*"
+                        required="true"
+                        />
+                        <div class="text-danger">
+                        <p></p>
+                        </div>
+                    </div>
+
+                    <input
+                        type="hidden"
+                        name="url"
+                        value=""
+                    />
+                    <div class="form-group">
+                        <input
+                        type="email"
+                        name="email"
+                        value=""
+                        placeholder="Email*"
+                        required="true"
+                        />
+                        <div class="text-danger">
+                        <p></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <input
+                        type="text"
+                        name="mobile"
+                        min="8"
+                        id="mobile"
+                        value=""
+                        placeholder="Mobile Number"
+                        required="true"
+                        />
+                        <div class="text-danger">
+                        <span id="mobileError" style="color: red"></span>
+                        <p id="showMinmumText" style="color: red"></p>
+                        <p></p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <textarea
+                        name="message"
+                        id="myTextBox"
+                        placeholder="Your Message..."
+                        ></textarea>
+                    </div>
+                    </div>
+
+
+            
+
+                <div class="column col-md-12 col-sm-12 col-xs-12">
+                    <div id="error_show "></div>
+                </div>
+
+                <div
+                    class="column btn-column col-md-12 col-sm-12 col-xs-12"
+                >
+                    <div class="form-group">
+                    <input type="hidden" name="submit" value="submit" />
+                        <button
+                        class="theme-btn btn-style-one"
+                        type="submit"
+                        id="submitButton"
+                        value="Submit"
+                        name="submit"
+                    >
+                        Submit
+                    </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
+        <div class="contact_mails">
+            <div class="row m-auto">
+            
+            
+                <div class="for_query mb-4">
+                <h6>www.ringmybiz.com :</h6>
+                <p>
+                    For enquiries and issues related to
+                    <a href="http://www.ringmybiz.com" class="maintext"
+                    ><b>www.ringmybiz.com</b></a
+                    >
+                    , please contact at
+                    <a href="mailto:enquiries@ringmybiz.com" class="maintext"
+                    ><b>enquiries@ringmybiz.com. </b></a
+                    >
+                    Any questions or concerns you may have regarding
+                    <a href="http://www.ringmybiz.com" class="maintext"
+                    ><strong>www.ringmybiz.com</strong></a
+                    >
+                    legal policies should be directed to our legal staff at
+                    <a href="mailto:lega@ringmybiz.com%20" class="maintext"
+                    ><b>legal@ringmybiz.com </b></a
+                    >
+                </p>
+                </div>
+                <div class="business_advertisment mb-4">
+                <h6>Advertising :</h6>
+                <p>
+                    If you’re ready to become an advertiser with
+                    <a href="http://www.ringmybiz.com" class="maintext"
+                    ><b>www.ringmybiz.com</b></a
+                    >
+                    (or if you have any queries related to advertising), please
+                    contact us at
+                    <a href="mailto:promoteme@ringmybiz.com" class="maintext"
+                    ><b>promoteme@ringmybiz.com</b></a
+                    >
+                </p>
+                </div>
+                <div class="key_contacts mb-4">
+                <div class="row">
+                    <h6>Key Contacts :</h6>
+                    <div class="col-sm-12 col-lg-6 col-md-12 mb-3">
+                    <div class="key_contact_1">
+                        <p>Promotion Team</p>
+                        <a href="mailto:motiur@akcworld.com" class="maintext"
+                        ><b>promoteme@ringmybiz.com</b></a
+                        >
+                    </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 col-md-12 mb-3">
+                    <div class="key_contact_2">
+                        <p>Sales Team</p>
+                        <a href="mailto:motiur@akcworld.com" class="maintext"
+                        ><b>sales@ringmybiz.com</b></a
+                        >
+                    </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 col-md-12 mb-3">
+                    <div class="key_contact_3">
+                        <p>Support Team</p>
+                        <a href="mailto:motiur@akcworld.com" class="maintext"
+                        ><b>support@ringmybiz.com</b></a
+                        >
+                    </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 col-md-12 mb-3">
+                    <div class="key_contact_4">
+                        <p>Legal Team</p>
+                        <a href="mailto:motiur@akcworld.com" class="maintext"
+                        ><b>legal@ringmybiz.com</b></a
+                        >
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="footer div-195">
+    <div class="container div-196">
+    <div class="top_footer_text div-197">
+        <div class="top_footer_links div-198">
+        About Ringmybiz | My Business | Contact Us | Terms of Use | Privacy
+        Policy | FAQs| Help
+        </div>
+        <div class="footer_search div-199">
+        <input type="text" placeholder="Search..." />
+        <button type="submit" class="footer_search_button">
+            <img src="Images/search_icon.png" alt="search icon" />
+        </button>
+        </div>
+    </div>
+    <div class="footer_divider div-200"></div>
+    <div class="bottom_footer div-201">
+        <div class="copyright div-202">
+        Copyright 2016 Ringmybiz.com, All Rights Reserved.
+        </div>
+        <div class="back_to_top div-203">Back To Top</div>
+    </div>
+    </div>
+</div>
+<script></script>
+<script src="main.js"></script>
+</body>
+</html>

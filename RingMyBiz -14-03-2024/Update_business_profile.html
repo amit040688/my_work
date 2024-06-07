@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="multi_step_form.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="multi_step_form.css" />
+    <title>RingMyBiz</title>
+  </head>
+
+  <body>
+    <div class="header div-2">
+      <div class="container div-3">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-9 col-sm-6 mb-2 align-items-center">
+            <a href="#" class="header_logo"
+              ><img
+                loading="lazy"
+                src="images/new_logo.gif"
+                class="img align-sm-c"
+            /></a>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6">
+            <div class="div-4">
+              <a href="business_detail.html" class="add_your_business div-5"
+                >Add your business | +</a
+              >
+              <a href="login.html" class="header_login">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/37d83731e8c5aa886eacd6d830445fed9416207716327f40e680a485a1773382?"
+                  class="img-2"
+                />
+                <div class="div-3">Login</div>
+              </a>
+              <a href="#" class="user_login_icon">
+                <img src="Images/snr.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-6 p-0 mt-3 mb-2">
+          <div class="cardd px-0 pt-4 pb-0 mt-3 mb-3">
+            <form id="udate_pro">
+              <h2 class="fs-title">Business Details</h2>
+              <p>Please fill out this form with the required information</p>
+
+              <!-- fieldsets -->
+              <fieldset>
+                <div class="form-card business_form_one">
+                  <div class="ms_two_input">
+                    <div class="left_input">
+                      <label class="fieldlabels">Business Name</label>
+                      <input type="text" name="pwd" placeholder="abc company" />
+                    </div>
+                    <div class="right_input">
+                      <label class="fieldlabels">City</label>
+                      <input type="text" name="cpwd" placeholder="Delhi" />
+                    </div>
+                    <div class="left_input">
+                      <label class="fieldlabels">Area</label>
+                      <input type="text" name="pwd" placeholder="abc" />
+                    </div>
+                  </div>
+                  <div class="ms_two_input">
+                    <div class="right_input">
+                      <label class="fieldlabels">Landmark</label>
+                      <input type="text" name="cpwd" placeholder="abc" />
+                    </div>
+                    <div class="left_input">
+                      <label class="fieldlabels">State</label>
+                      <input type="text" name="pwd" placeholder="Delhi" />
+                    </div>
+                    <div class="right_input">
+                      <label class="fieldlabels">Pincode</label>
+                      <input type="text" name="cpwd" placeholder="110044" />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-card business_form_two">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <h2 class="fs-title">Add Contact Details</h2>
+                    </div>
+                  </div>
+                  <div class="ms_two_input">
+                    <div class="left_input">
+                      <label class="fieldlabels">Contact Person Name</label>
+                      <input type="text" name="pwd" placeholder="abc" />
+                    </div>
+                    <div class="right_input">
+                      <label class="fieldlabels">Mobile no.</label>
+                      <input type="text" name="cpwd" placeholder="0001115588" />
+                    </div>
+                    <div class="left_input">
+                      <label class="fieldlabels">WhatsApp Number</label>
+                      <input type="text" name="pwd" placeholder="0001115588" />
+                    </div>
+                    <div class="right_input">
+                      <label class="fieldlabels">Email</label>
+                      <input type="email" name="cpwd" placeholder="abc" />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-card business_form_three">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="fs-title">Add Business Timing</h2>
+                      <p>Let Your Customers Know Your Business Timing</p>
+                    </div>
+                  </div>
+                  <label class="fieldlabels select_week_day"
+                    >Select Days of the Week</label
+                  >
+                  <div class="checkboxes__row">
+                    <div class="checkboxes__item">
+                      <label class="checkbox style-e">
+                        <div class="day">
+                          <input type="checkbox" checked="checked" />
+                          <div class="checkbox__checkmark"></div>
+                          <div class="checkbox__body">Mon</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="checkboxes__item">
+                      <label class="checkbox style-e">
+                        <div class="day">
+                          <input type="checkbox" checked="checked" />
+                          <div class="checkbox__checkmark"></div>
+                          <div class="checkbox__body">Tue</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="checkboxes__item">
+                      <label class="checkbox style-e">
+                        <div class="day">
+                          <input type="checkbox" checked="checked" />
+                          <div class="checkbox__checkmark"></div>
+                          <div class="checkbox__body">Wed</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="checkboxes__item">
+                      <label class="checkbox style-e">
+                        <div class="day">
+                          <input type="checkbox" checked="checked" />
+                          <div class="checkbox__checkmark"></div>
+                          <div class="checkbox__body">Thu</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="checkboxes__item">
+                      <label class="checkbox style-e">
+                        <div class="day">
+                          <input type="checkbox" checked="checked" />
+                          <div class="checkbox__checkmark"></div>
+                          <div class="checkbox__body">Fri</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="checkboxes__item">
+                      <label class="checkbox style-e">
+                        <div class="day">
+                          <input type="checkbox" checked="checked" />
+                          <div class="checkbox__checkmark"></div>
+                          <div class="checkbox__body">Sat</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="checkboxes__item">
+                      <label class="checkbox style-e">
+                        <div class="day">
+                          <input type="checkbox" checked="checked" />
+                          <div class="checkbox__checkmark"></div>
+                          <div class="checkbox__body">Sun</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="select_all_box">
+                    <label for="selectAll">Select all days </label>
+                    <input id="selectAll" class="select_all" type="checkbox" />
+                  </div>
+                  <div class="time_slot">
+                    <div class="time_wrap">
+                      <label class="fieldlabels">Open at</label>
+                      <select id="open_time">
+                        <option value="nine">9:00 am</option>
+                        <option value="nine_thi">9:30 am</option>
+                        <option value="ten">10:00 am</option>
+                        <option value="eight" selected>8:00 am</option>
+                      </select>
+                    </div>
+                    <div class="time_wrap">
+                      <label class="fieldlabels">Close at</label>
+                      <select id="close_time">
+                        <option value="nine">6:00 pm</option>
+                        <option value="nine_thi">7:00pm</option>
+                        <option value="ten">8:00 pm</option>
+                        <option value="eight" selected>9:00 pm</option>
+                      </select>
+                    </div>
+                  </div>
+                  <a href="#" class="add_more_time_slot">Add More +</a>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="form-card business_form_four">
+                  <div class="row">
+                    <div class="col-12">
+                      <input
+                        class="input-elevated"
+                        type="text"
+                        placeholder="Type business category"
+                      />
+                      <h2 class="fs-title">Add Photos</h2>
+                      <p>Showcase photos of your business to look authentic</p>
+                    </div>
+                  </div>
+
+                  <label for="file_input" class="fieldlabels upload_image"
+                    ><img src="Images/cemara_icon.png" alt="cemara_icon" />Add
+                    Photo</label
+                  >
+                  <input
+                    id="file_input"
+                    type="file"
+                    name="pic"
+                    accept="image/*"
+                  />
+                </div>
+
+                <input
+                  type="button"
+                  name="Submit"
+                  class="next action-button"
+                  value="Submit"
+                />
+              </fieldset>
+
+              <!-- <fieldset>
+                <div class="form-card business_form_five">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="fs-title">Finish</h2>
+                    </div>
+                  </div>
+                  <br /><br />
+                  <h2 class="purple-text text-center">
+                    <strong>SUCCESS !</strong>
+                  </h2>
+                  <br />
+                  <br /><br />
+                  <div class="row justify-content-center">
+                    <div class="col-7 text-center">
+                      <h5 class="purple-text text-center">
+                        You Have Successfully Signed Up
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </fieldset> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer div-195">
+      <div class="container div-196">
+        <div class="top_footer_text div-197">
+          <div class="top_footer_links div-198">
+            About Ringmybiz | My Business | Contact Us | Terms of Use | Privacy
+            Policy | FAQs| Help
+          </div>
+          <div class="footer_search div-199">
+            <input type="text" placeholder="Search..." />
+            <button type="submit" class="footer_search_button">
+              <img src="Images/search_icon.png" alt="search icon" />
+            </button>
+          </div>
+        </div>
+        <div class="footer_divider div-200"></div>
+        <div class="bottom_footer div-201">
+          <div class="copyright div-202">
+            Copyright 2016 Ringmybiz.com, All Rights Reserved.
+          </div>
+          <div class="back_to_top div-203">Back To Top</div>
+        </div>
+      </div>
+    </div>
+    <script src="multi_step_form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <title>RingMyBiz</title>
+</head>
+
+<body style="background: #F9FAFC;">
+  <div class="header div-2" id="home">
+    <div class="container div-3">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-9 col-sm-6 mb-2 align-items-center">
+          <a href="#home" class="header_logo"><img loading="lazy" src="images/new_logo.gif" class="img align-sm-c"></a>
+        </div>
+        <div class="col-12  col-md-3 col-sm-6">
+          <div class="div-4">
+            <a href="business_detail.html" class=" add_your_business div-5">Add your business | +</a>
+            <a href="login.html" class="header_login">
+              <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/37d83731e8c5aa886eacd6d830445fed9416207716327f40e680a485a1773382?"
+                class="img-2">
+              <div class="div-3">Login</div>
+            </a>
+            <a href="#" class="user_login_icon">
+             <img src="Images/snr.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <aside class="aside_main_wrap">
+    <div class=" account">
+      <div class="account_heading">
+        <div class="side_menu_close"><i class="fa-solid fa-xmark"></i></div>
+
+        <a class="profile_name">
+          <div class="user_profile_name">
+            <div class="user_name">Profile name</div>
+            <div class="user_details">Click to view profile</div>
+          </div>
+          <div class="user_profile_img">
+            <div class=" userimage">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class=" account_content">
+        <div class=" account_catebox">
+          <ul class=" account_catelist">
+            <li role="button" class=" account_cateitem">
+              <a class="account_cateanchor">
+                <div class=" account_icon">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-favorites.svg" alt=""
+                    class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text font15 ">Favorites</div>
+              </a>
+            </li>
+            <li tabindex="0" aria-label="Saved" role="button" class=" account_cateitem">
+              <a class=" account_cateanchor">
+                <div class=" account_icon">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-saved.svg" alt=""
+                    class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">Saved</div>
+              </a>
+            </li>
+            <li class=" account_cateitem">
+              <a class="">
+                <div class="">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-interests.svg" alt=""
+                    class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">Interests</div>
+              </a>
+            </li>
+            <li class=" account_cateitem">
+              <a class="">
+                <div class="">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-editprofile.svg" alt=""
+                    class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">Edit Profile</div>
+              </a>
+            </li>
+            <li class=" account_cateitem">
+              <a class="account_cateanchor">
+                <div class="">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-my-transaction.svg"
+                    alt="" class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">My Transaction</div>
+              </a>
+            </li>
+            <li tabindex="0" aria-label="Change language" role="button" class=" account_cateitem">
+              <a class="account_cateanchor">
+                <div class="">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/language_sidebar_icon.svg"
+                    alt="" class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="side_select_language">
+                  <div class="account_text">Change language</div>
+                  <div class=" sidebarbox">
+                    <div class=" sidebox ">
+                      <div class=" ">English</div>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <ul class="sidelang_dropdown  dn">
+                      <li class="">हिंदी</li>
+                      <li class="">मराठी</li>
+                      <li class="">বেঙ্গলি</li>
+                      <li class="">ગુજરાતી</li>
+                      <li class="">ಕನ್ನಡ</li>
+                      <li class="">தமிழ்</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class=" account_catebox">
+          <ul class="account_catelist">
+            <li tabindex="0" aria-label="Notifications" role="button" class=" account_cateitem">
+              <a class=" account_cateanchor">
+                <div class="account_icon">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/notify_icon.svg" alt=""
+                    class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">Notifications</div>
+              </a>
+            </li>
+            <li class=" account_cateitem">
+              <a href="#" class="">
+                <div class="">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-custom-service.svg"
+                    alt="" class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">Customer Service</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="account_catebox">
+          <ul class="account_catelist">
+            <li class=" account_cateitem">
+              <a href="#" class="jsx-314be73d0280ef0d account_cateanchor">
+                <div class="">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-investor-relations.svg"
+                    alt="" class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">Investor Relations</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="account_catebox">
+          <ul class="account_catelist">
+            <li class=" account_cateitem">
+              <a href="#" class="jsx-314be73d0280ef0d account_cateanchor">
+                <div class=" account_icon">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-policy.svg" alt=""
+                    class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">Policy</div>
+              </a>
+            </li>
+            <li class=" account_cateitem">
+              <a class="account_cateanchor">
+                <div class=" account_icon">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-feedback.svg" alt=""
+                    class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">Feedback</div>
+              </a>
+            </li>
+            <li class=" account_cateitem">
+              <a class=" account_cateanchor">
+                <div class=" account_icon">
+                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/prf-logout.svg" alt=""
+                    class="jsx-314be73d0280ef0d account_image">
+                </div>
+                <div class="account_text">Logout</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="top_search">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 m-auto">
+          <div class="search_wrapper my-5">
+            <div class="searchBar ">
+              <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search for anything"
+                value="" />
+              <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="#666666"
+                    d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider_section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class=" col-lg-7">
+          <div class="slider-wrap">
+            <div class="carousel owl-carousel ">
+              <div class="slide">
+                <img src="Images/slide-1.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="Images/slide-1.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="Images/slide-1.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="Images/slide-1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="services">
+            <div class="col-3">
+              <div class="service_box_wrap">
+                <a href="#">
+                  <div class="service_box">
+                    <img src="Images/restaurant.png">
+                    <p class="service_text">Restaurants</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="service_box_wrap">
+                <a href="#">
+                  <div class="service_box">
+                    <img src="Images/beauty.png">
+                    <p class="service_text">Beauty<br>Spa</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="service_box_wrap">
+                <a href="#">
+                  <div class="service_box">
+                    <img src="Images/homedecor 1 (2).png">
+                    <p class="service_text">Home Decor</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="service_box_wrap">
+                <a href="#">
+                  <div class="service_box">
+                    <img src="Images/education 1 (2).png">
+                    <p class="service_text">Education</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="service_box_wrap">
+                <a href="#">
+                  <div class="service_box">
+                    <img src="Images/rent.png">
+                    <p class="service_text">Rent & Hire</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="service_box_wrap">
+                <a href="#">
+                  <div class="service_box">
+                    <img src="Images/bunk-bed.png">
+                    <p class="service_text">PG/Hostels</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="service_box_wrap">
+                <a href="#">
+                  <div class="service_box">
+                    <img src="Images/hotel.png">
+                    <p class="service_text">Hotels</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="service_box_wrap">
+                <a href="#">
+                  <div class="service_box">
+                    <img src="Images/agent.png">
+                    <p class="service_text">Estate Agent</p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="top_news_section my-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="news_box  align-items-center px-0 flex-lg-wrap flex-lg-column">
+          <div class="col-12 col-lg-6">
+            <div class=" news_box_text">
+              <div class="rsshead1 d-flex align-items-center justify-content-between"><a href="#" target="_blank"> Aishwarya Cabs </a> <div id="ad3">Ad</div> </div>
+              <h5 class="news_title">Katy Perry clearly hasn't been <br>debriefed on Zoolander's trigger song</h5>
+              <div class="rssoption"><a href="#">buzzsprout.com</a> &nbsp; <a href="#">Others</a></div>
+              <p>Come on, Katy — throw a guy a trigger warning next time. Zoolander 2 is hitting theaters on February
+                12, and it seems that Katy Perry is among the many celebrity A-listers making</p>
+               <div class="d-flex align-items-center justify-content-between"> <div class="ac_left"><a href="#">Save</a>&nbsp;&nbsp;&nbsp;<a href="#">Share</a>
+               </div>
+             <p class="post-meta mb-0"><span class="published"> 03 June 2023</span></p></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="news_box_img text-lg-end">
+              <img src="Images/top_news.png" alt="top news image" class=" img-size">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trending_news p-md-0">
+
+    <div class="container">
+      <div class="trending_box">
+        <div class="row">
+          <div class=" col-12 col-lg-8 px-0">
+            <div class="new_title">
+              <h5>Trending News</h5>
+            </div>
+            <div class="left_boxes">
+              <div class="box">
+                <div class="img"><a href="#"><img src="Images/img-1.png" alt="new img"></a></div>
+                <div class="content">
+                  <p class="post-meta" ><span class="published"> 03 June 2023</span></p>
+                  <div class="rsshead1"><a href="#" target="_blank"> Aishwarya Cabs </a> <div id="ad3" >Ad</div> </div>
+                  <h5 class="box_news_title"><a href="#">I Still Use Plain Text for Everything, and I Love It</a></h5>
+                  <div class="rssoption"><a href="#">buzzsprout.com</a> &nbsp; <a href="#">Others</a></div>
+                  <p class="box_news_para">Plain text has long been a favorite here at Lifehacker , but over the years
+                    most people ....</p>
+                    <div class="ac_left"><a href="#">Save</a>&nbsp;&nbsp;&nbsp;<a href="#"  class="share_link">Share</a>
+                    </div>
+                   
+                </div>
+              </div>
+              <div class="box">
+                <div class="img"><a href="#"><img src="Images/loose_tiger.png" alt="new img"></a></div>
+                <div class="content">
+                  <p class="post-meta"><span class="published"> 03 June 2023</span></p>
+                  <div class="rsshead1"><a href="#" target="_blank"> Aishwarya Cabs </a> <div id="ad3" >Ad</div> </div>
+                  <h5 class="box_news_title"><a href="#">Loose tiger causes traffic nightmare on Qatar highway</a></h5>
+                  <div class="rssoption"><a href="#">buzzsprout.com</a> &nbsp; <a href="#">Others</a></div>
+                  <p class="box_news_para">A loose tiger cub gave commuting motorists quite the scare on the Doha
+                    Expressway.....</p>
+                    <div class="ac_left"><a href="#">Save</a>&nbsp;&nbsp;&nbsp;<a href="#"  class="share_link">Share</a>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="img"><a href="#"><img src="Images/wordpress.png" alt="new img"></a></div>
+                <div class="content">
+                  <p class="post-meta"><span class="published"> 03 June 2023</span></p>
+                  <div class="rsshead1"><a href="#" target="_blank"> Aishwarya Cabs </a> <div id="ad3" >Ad</div> </div>
+                  <h5 class="box_news_title"><a href="#">Why WordPress CMS is recognized all over the globe?</a></h5>
+                  <div class="rssoption"><a href="#">buzzsprout.com</a> &nbsp; <a href="#">Others</a></div>
+                  <p class="box_news_para">Are you new to business or blogging? If so, then you must have researched...
+                  </p>
+                  <div class="ac_left"><a href="#">Save</a>&nbsp;&nbsp;&nbsp;<a href="#"  class="share_link">Share</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 px-0">
+            <div class="right_boxes">
+              <div class="box">
+                <div class="img"><a href="#"><img src="Images/white-man.png" alt="new img"></a></div>
+                <div class="content">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="ac_left"><a href="#">Save</a>&nbsp;&nbsp;&nbsp;<a href="#"  class="share_link">Share</a>
+                    </div>
+                    <p class="post-meta"><span class="published"> 03 June 2023</span></p>
+                  </div>
+                  
+                  <h5 class="box_news_title"><a href="#">White men (named Steve Ballmer)<br>can dunk</a></h5>
+                </div>
+              </div>
+              <div class="box">
+                <div class="img"><a href="#"><img src="Images/car.png" alt="new img"></a></div>
+                <div class="content">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="ac_left"><a href="#">Save</a>&nbsp;&nbsp;&nbsp;<a href="#"  class="share_link">Share</a>
+                    </div>
+                    <p class="post-meta"><span class="published"> 03 June 2023</span></p>
+                  </div>
+                  <h5 class="box_news_title"><a href="#">3D printing BioPen lets surgeons draw with stem cells</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="ad_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <a href="#" class="m-auto d-block text-center my-5"><img src="Images/ad_img.png" alt="ad img"
+              class="img-fluid"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="seo_service_button my-5">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="searchbox-wrap text-center">
+            <div class="seo_input m-auto text-center">
+              <p class="text-c">Create your SEO ready FREE business profile</p> <button href="#"><span>Click Here</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="page_post_section my-5 py-5">
+    <div class="container">
+      <div class="post_boxes">
+        <div class="row">
+
+          <div class="col-sm-6 col-lg-4 col-12">
+            <div class="post_box">
+              <div class="post_img"> <img src="Images/post-img-1.png" alt="post img" class="img-fluid w-100"></div>
+              <!-- <div class="post_img"> <img src="Images/slide-1.png" alt="post img" class="img-fluid w-100"></div> -->
+              <div class="post_content">
+                <a href="#">SmartSocialBrand 22222</a>
+                <h5 class="post_title">Things to Do in Indonesia</h5>
+                <p>Top 3 Things to Do in Indonesia Indonesia has ranked among the top tourist destin..</p>
+                <div class="post_links">
+                  <section class=" ring_modal ">             
+                    <div class=" ring_modal_medium  fadeInUpTop">
+                      <div class="ring_modal_medium_header">
+                          <div class=" modal_head_center">
+                          <div class=" text_left  text_left_title" style="color: #000;">Send Enquiry By Email</div>
+                          <div class="  text_left line_clamp_1" style="color: #000;"><span class=""></span>Company Name<span class=""></span></div>
+                        </div>
+                          <div class=" modal_head_right"><span class="modal_close_icon" style="color: #000;cursor: pointer;"><i class="fa-solid fa-xmark"></i></span></div>
+                      </div>
+                      <div class="ring_modal_medium_body">
+                        <div class="input_group">
+                          <input type="text" required="" class=" input_text " value=""><span class="line"></span>
+                          <label class=" input_label">Full Name*</label>
+                        </div>
+                        
+                        
+                        <div class=" input_group"><input type="text" maxlength="10" required="" class=" input_text " value=""><span class=" line"></span>
+                          <label class=" input_label ">Phone No.*</label>
+                        </div>
+                        
+                        
+                        <div class=" input_group"><input type="text" required="" class=" input_text " value=""><span class=" line"></span><label class=" input_label ">Email*</label></div>
+                        
+                        <div class=" input_group "><textarea type="text" maxlength="300" class=" input_text  input_textarea"></textarea><span class=" line"></span><label class="input_textarea_label ">Massege*</label>
+                        </div><div class=" smsemail_btnbox mt-30"><button class=" smsemail_button">Send</button></div></div>
+                        </div>
+                   
+                  </section>
+
+                  <div class="ac_left"><a href="#" class="open_popup_button">Ring</a>&nbsp;<a href="#">Save</a>&nbsp;<a href="#"  class="share_link">Share</a>
+                  </div> <a href="#" class="post_read_more">Read More</a>
+                </div>
+                <!-- <div class="author">
+                  <img src="Images/book_re_writer 1.png" alt="author img">
+                  <p>By Arthur on <span>03 June 2023</span></p>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-12">
+            <div class="post_box">
+              <!-- <div class="post_img"> <img src="Images/watch.png" alt="post img" class="img-fluid w-100"></div> -->
+              <div class="post_img"> <img src="Images/img---1.jpeg" alt="post img" class="img-fluid w-100"></div>
+              <div class="post_content">
+                <a href="#">SmartSocialBrand</a>
+                <h5 class="post_title">Things to Do in Indonesia</h5>
+                <p>Top 3 Things to Do in Indonesia Indonesia has ranked among the top tourist destin..</p>
+                <section class="share_modal">             
+                  <div class=" ring_modal_medium  fadeInUpTop">
+                    <div class="ring_modal_medium_header">
+                        <div class=" modal_head_center">
+                        <div class=" text_left  text_left_title" style="color: #000;">Share it by Social Networks</div>
+                        <div class="  text_left line_clamp_1" style="color: #000;"><span class=""></span>Share Link with Friends<span class=""></span></div>
+                      </div>
+                        <div class=" modal_head_right"><span class="modal_close_icon" style="cursor: pointer;color: #000;"><i class="fa-solid fa-xmark"></i></span></div>
+                    </div>
+                    <div class="ring_modal_medium_body">
+                    <ul>
+                      <li><a href="#"><img src="Images/whatsapp.png" alt="whatsapp_icon"></a></li>
+                      <li><a href="#"><img src="Images/facebook.png" alt="face_icon"></a></li>
+                      <li><a href="#"><img src="Images/link_icon.png" alt="face_icon"></a></li>
+                    </ul>
+                    </div>
+                      </div>
+                </section>
+                <div class="post_links">
+                  <div class="ac_left"><a href="#" class="open_popup_button">Ring</a>&nbsp;<a href="#">Save</a>&nbsp;<a href="#"  class="share_link">Share</a>
+                  </div> <a href="#" class="post_read_more">Read More</a>
+                </div>
+                <!-- <div class="author">
+                  <img src="Images/book_re_writer 1.png" alt="author img">
+                  <p>By Arthur on <span>03 June 2023</span></p>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-12">
+            <div class="post_box">
+              <!-- <div class="post_img"> <img src="Images/post-img-1.png" alt="post img" class="img-fluid w-100"></div> -->
+              <div class="post_img"> <img src="Images/img---2.jpeg" alt="post img" class="img-fluid w-100"></div>
+              <div class="post_content">
+                <a href="#">SmartSocialBrand</a>
+                <h5 class="post_title">Things to Do in Indonesia</h5>
+                <p>Top 3 Things to Do in Indonesia Indonesia has ranked among the top tourist destin..</p>
+                <div class="post_links">
+                  <div class="ac_left"><a href="#" class="open_popup_button">Ring</a>&nbsp;<a href="#">Save</a>&nbsp;<a href="#"  class="share_link">Share</a>
+                  </div> <a href="#" class="post_read_more">Read More</a>
+                </div>
+                <!-- <div class="author">
+                  <img src="Images/book_re_writer 1.png" alt="author img">
+                  <p>By Arthur on <span>03 June 2023</span></p>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-12">
+            <div class="post_box">
+              <!-- <div class="post_img"> <img src="Images/post-img-1.png" alt="post img" class="img-fluid w-100"></div> -->
+              <div class="post_img"> <img src="Images/img---3.jpeg" alt="post img" class="img-fluid w-100"></div>
+              <div class="post_content">
+                <a href="#">SmartSocialBrand</a>
+                <h5 class="post_title">Things to Do in Indonesia</h5>
+                <p>Top 3 Things to Do in Indonesia Indonesia has ranked among the top tourist destin..</p>
+                <div class="post_links">
+                  <div class="ac_left"><a href="#" class="open_popup_button">Ring</a>&nbsp;<a href="#">Save</a>&nbsp;<a href="#"  class="share_link">Share</a>
+                  </div> <a href="#" class="post_read_more">Read More</a>
+                </div>
+                <!-- <div class="author">
+                  <img src="Images/book_re_writer 1.png" alt="author img">
+                  <p>By Arthur on <span>03 June 2023</span></p>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-12">
+            <div class="post_box">
+              <div class="post_img"> <img src="Images/post-img-1.png" alt="post img" class="img-fluid w-100"></div>
+              <div class="post_content">
+                <a href="#">SmartSocialBrand</a>
+                <h5 class="post_title">Things to Do in Indonesia</h5>
+                <p>Top 3 Things to Do in Indonesia Indonesia has ranked among the top tourist destin..</p>
+                <div class="post_links">
+                  <div class="ac_left"><a href="#" class="open_popup_button">Ring</a>&nbsp;<a href="#">Save</a>&nbsp;<a href="#"  class="share_link">Share</a>
+                  </div> <a href="#" class="post_read_more">Read More</a>
+                </div>
+                <!-- <div class="author">
+                  <img src="Images/book_re_writer 1.png" alt="author img">
+                  <p>By Arthur on <span>03 June 2023</span></p>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-12">
+            <div class="post_box">
+              <div class="post_img"> <img src="Images/post-img-1.png" alt="post img" class="img-fluid w-100"></div>
+              <div class="post_content">
+                <a href="#">SmartSocialBrand</a>
+                <h5 class="post_title">Things to Do in Indonesia</h5>
+                <p>Top 3 Things to Do in Indonesia Indonesia has ranked among the top tourist destin..</p>
+                <div class="post_links">
+                  <div class="ac_left"><a href="#" class="open_popup_button">Ring</a>&nbsp;<a href="#">Save</a>&nbsp;<a href="#"  class="share_link">Share</a>
+                  </div> <a href="#" class="post_read_more">Read More</a>
+                </div>
+                <!-- <div class="author">
+                  <img src="Images/book_re_writer 1.png" alt="author img">
+                  <p>By Arthur on <span>03 June 2023</span></p>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view_more">
+        <a href="#">View more</a>
+      </div>
+    </div>
+  </section>
+  <section class="business_listing_section">
+    <div class="container">
+      <h5 class="blog_listing_title">Business <span>Listing</span></h5>
+      <div class="blog_listing_boxes">
+        <div class="row">
+          <div class="col-xl-4 col-12">
+            <div class="blog_listing_left_box h-auto ">
+              <!-- <h6>Latest Business Listings on Ringmybiz</h6> -->
+              <!-- <div class="divider"></div> -->
+              <p> <a href="#">Maple High Six Corners MA Locksmith</a> <span>03 June 2023</span></p>
+              <p> <a href="#">Maple High Six Corners MA Locksmith</a> <span>03 June 2023</span></p>
+              <p> <a href="#">Maple High Six Corners MA Locksmith</a> <span>03 June 2023</span></p>
+              <p> <a href="#">Maple High Six Corners MA Locksmith</a> <span>03 June 2023</span></p>
+              <p> <a href="#">Maple High Six Corners MA Locksmith</a> <span>03 June 2023</span></p>
+              <p> <a href="#">Maple High Six Corners MA Locksmith</a> <span>03 June 2023</span></p>
+
+              <div class="click_for_listing"><a href="#">Click here to list your business</a> <a href="#"
+                  class="free_btn">Free</a></div>
+            </div>
+
+          </div>
+          <div class="col-xl-8 col-12">
+            <div class="blog_listing_right_box h-auto">
+              <!-- <h6>Areas of Listing</h6> -->
+              <div class="row d-flex flex-wrap">
+                <div class="col-12 col-sm-12 col-lg-12 col-md-12 col-xl-6 "><div class="add_box"><img src="Images/300x250-barilla.png" alt=""></div></div>
+
+
+                <div class="col-12 col-sm-12 col-lg-12 col-md-12 col-xl-6">
+                  <div class="col-sm-12 col-lg-12 col-md-12 ">
+                    <div class="listin_area_box">
+                      <div class="area_img"><img src="Images/list img 1.png" alt="list img"></div>
+                      <div class="area_text">
+                        <div class="rating">
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+  
+                          <span>( 584 Review )</span>
+                        </div>
+                        <div class="website_title">
+                          <h6>Maple High Six Corners MA Locksmith</h6>
+                        </div>
+                        <div class="visit_site">
+                          <p><img src="Images/ic_outline-watch-later.png" alt=""><span>2 Hours ago</span></p>
+                          <a href="#">View Site</a>
+  
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                  </div>
+                  <div class="col-sm-12 col-lg-12 col-md-12 ">
+                    <div class="listin_area_box">
+                      <div class="area_img"><img src="Images/list img 1.png" alt="list img"></div>
+                      <div class="area_text">
+                        <div class="rating">
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+  
+                          <span>( 584 Review )</span>
+                        </div>
+                        <div class="website_title">
+                          <h6>Maple High Six Corners MA Locksmith</h6>
+                        </div>
+                        <div class="visit_site">
+                          <p><img src="Images/ic_outline-watch-later.png" alt=""><span>2 Hours ago</span></p>
+                          <a href="#">View Site</a>
+  
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                  </div>
+                  <div class="col-sm-12 col-lg-12 col-md-12 ">
+                    <div class="listin_area_box">
+                      <div class="area_img"><img src="Images/list img 1.png" alt="list img"></div>
+                      <div class="area_text">
+                        <div class="rating">
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+  
+                          <span>( 584 Review )</span>
+                        </div>
+                        <div class="website_title">
+                          <h6>Maple High Six Corners MA Locksmith</h6>
+                        </div>
+                        <div class="visit_site">
+                          <p><img src="Images/ic_outline-watch-later.png" alt=""><span>2 Hours ago</span></p>
+                          <a href="#">View Site</a>
+  
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                  </div>
+                  <div class="col-sm-12 col-lg-12 col-md-12 ">
+                    <div class="listin_area_box">
+                      <div class="area_img"><img src="Images/list img 1.png" alt="list img"></div>
+                      <div class="area_text">
+                        <div class="rating">
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+  
+                          <span>( 584 Review )</span>
+                        </div>
+                        <div class="website_title">
+                          <h6>Maple High Six Corners MA Locksmith</h6>
+                        </div>
+                        <div class="visit_site">
+                          <p><img src="Images/ic_outline-watch-later.png" alt=""><span>2 Hours ago</span></p>
+                          <a href="#">View Site</a>
+  
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                  </div>
+                  <div class="col-sm-12 col-lg-12 col-md-12 ">
+                    <div class="listin_area_box">
+                      <div class="area_img"><img src="Images/list img 1.png" alt="list img"></div>
+                      <div class="area_text">
+                        <div class="rating">
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+  
+                          <span>( 584 Review )</span>
+                        </div>
+                        <div class="website_title">
+                          <h6>Maple High Six Corners MA Locksmith</h6>
+                        </div>
+                        <div class="visit_site">
+                          <p><img src="Images/ic_outline-watch-later.png" alt=""><span>2 Hours ago</span></p>
+                          <a href="#">View Site</a>
+  
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                  </div>
+                 
+                </div>
+                
+       
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class=" digital_services div-189">
+    <div class=" container div-190">
+
+      <div class="row">
+        <div class="col-12 div-191">
+
+          <div class="seo_button">
+            <a href="#" class="div-192">
+              Click for
+              <span style="color: rgba(240, 37, 37, 1)">SEO</span>
+              services
+            </a>
+            <img loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/03dde9bb00e68e816654d3c4b9d6b3588a66f33f4865840e1542405e6aa9c30f?"
+              class="img-59">
+          </div>
+        </div>
+        <div class="col-12 div-193">
+          <div class="digital_mar_button">
+            <a href="#" class="div-194">
+              Click for
+              <span style="color: rgba(240, 37, 37, 1)">Digital marketing</span>
+              services
+            </a>
+            <img loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef5b2fd25e7398280633fdc7f606ede26fca70d45b71022c8975eeb10f238afd?"
+              class="img-60">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer div-195">
+    <div class="container div-196">
+      <div class="top_footer_text div-197">
+        <div class="top_footer_links div-198">
+          About Ringmybiz | My Business | Contact Us | Terms of Use | Privacy
+          Policy | FAQs| Help
+        </div>
+        <div class="footer_search div-199">
+          <input type="text" placeholder="Search...">
+          <button type="submit" class="footer_search_button">
+            <img src="Images/search_icon.png" alt="search icon">
+          </button>
+        </div>
+      </div>
+      <div class="footer_divider div-200"></div>
+      <div class="bottom_footer div-201">
+        <div class="copyright div-202">
+          Copyright 2016 Ringmybiz.com, All Rights Reserved.
+        </div>
+        <div class="back_to_top div-203">Back To Top</div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

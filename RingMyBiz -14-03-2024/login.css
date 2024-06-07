@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+*{
+padding:0;
+margin: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Nunito Sans', sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;     
+overflow: hidden;
+
+}
+
+.login-page {
+width: 360px;
+padding: 8% 0 0;
+margin: auto;
+}
+.form_common_wrap {
+position: relative;
+}
+.form_common_wrap .form {
+position: relative;
+z-index: 1;
+background: #FFFFFF;
+max-width: 530px;
+margin: 0 auto 100px;
+padding: 50px;
+box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgb(0 0 0 / 25%);
+font-family: 'Nunito Sans', sans-serif;
+border-radius: 20px;
+margin-top: 54px;
+}
+.form-header {
+color: #FF3131;
+font-family: 'Nunito Sans', sans-serif;
+font-weight: 700;
+font-size: 17px;
+}
+form-header h1 span{
+color:#525252;
+}
+.form-subtitle {
+font-size: 16px;
+color: #525252;
+font-weight: 500;
+}
+.form-group label {
+color: #828282;
+font-size: 14px;
+font-family: 'Nunito Sans', sans-serif;
+font-weight: 600;
+}
+.goggle_login a {
+display: flex;
+color: #828282;
+text-decoration: none;
+font-weight: 700;
+font-size: 14px;
+margin: auto;
+align-items: center;
+justify-content: center;
+border: 1px solid #e8e8e8;
+padding: 9px;
+border-radius: 5px;
+margin: 30px 0;
+}
+.goggle_login a p {
+padding-left: 11px;
+margin-bottom: 0;
+}
+p.email_option {
+text-align: center;
+color: #A1A1A1;
+font-size: 12px;
+margin-bottom: 28px;
+}
+.form input {
+font-family: 'Nunito Sans', sans-serif;
+outline: 0;
+border: 1px solid #ded2d9;
+width: 100%;
+margin: 0 0 15px;
+padding: 10px;
+box-sizing: border-box;
+font-size: 18px;
+border-radius: 5px;
+}
+a.form-recovery {
+text-decoration: none;
+color: #525252;
+font-size: 12px;
+font-weight: 700;
+position: relative;
+top: -12px;
+}
+.form button {
+outline: 0;
+background: #FF3131;
+width: 100%;
+border: 0;
+padding: 13px;
+color: #FFFFFF;
+font-size: 18px;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+cursor: pointer;
+border-radius: 6px;
+font-weight: 700;
+font-family: 'Nunito Sans', sans-serif;
+margin: 25px 0;
+}
+.signup-link {
+font-size: 12px;
+text-align: center;
+font-weight: 700;
+}
+
+.signup-link a {
+text-decoration: none;
+padding-left: 8px;
+color: #3BB1F3; 
+font-weight: 500;
+cursor: pointer;
+}
+h1.sign_up_title span {
+color: #525252;
+}
+h1.sign_up_title,
+h1.login_title {
+text-align: center;
+margin-bottom: 11px;
+font-weight: 800;
+}
+h1.login_title{
+text-align: left;
+}
+.form-group.two_input {
+display: flex;
+justify-content: space-between;
+}
+
+.form-group.two_input .first_name {
+margin-right: 20px;
+}
+
+.panel_two .form-group.forget_password {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.panel_two label.form-remember {
+display: flex;
+align-items: center;
+}
+
+.panel_two input.checkbox {
+width: 7%;
+}
+.check_wrap {
+width: 100%;
+} 
+.panel_two .check_wrap {
+display: flex;
+align-items: center;
+margin: 0;
+}
+.check_wrap .term_and_condition {
+font-size: 14px;
+font-weight: 600;
+color: #000;
+margin-bottom: 13px;;
+}
+.active .login_form {
+display: none;
+}
+
+
+.active .form-panel.form.panel_two{
+display: block;
+}
+
+.forget_password .login_form {
+display: none;
+}
+.forget_password .panel_three {
+display: block;
+}
+a.back_to_login {
+text-decoration: none;
+font-size: 20px;
+color: #3BB1F3;
+text-align: center;
+display: block;
+font-weight: 500;
+cursor: pointer;
+font-size: 15px;
+text-align: center;
+font-weight: 700;
+}
+.back_to_main_login{
+color: #000;
+padding-right:6px;
+}
+.toggle-password {
+float: right;
+cursor: pointer;
+margin-right: 10px;
+margin-top: -47px;
+}
+/* media query started */
+@media(max-width:1400px){
+body {    
+    overflow: auto;
+    }
+}
+@media(max-width:575px){
+.form{
+margin-left:20px;
+margin-right:20px;
+}
+body {   
+overflow: auto; 
+}
+.form_common_wrap .form{
+padding: 35px 30px;
+}
+}
